@@ -10,7 +10,7 @@ header{
 }
 
 .Corpo-Cursos{
-    background-image: url(/src/img/Background.jpg);
+    background-image: url(./src/img/Background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -52,7 +52,7 @@ button:hover{
 }
 
 .Comp{
-    background-image: url(/src/img/teste69.jpg);
+    background-image: url(./src/img/teste69.jpg);
     border-color: white;
     position: relative;
     left: 300px;
@@ -87,7 +87,7 @@ button:hover{
 }
 
 .Adm{
-    background-image: url(/src/img/teste69.jpg);
+    background-image: url(./src/img/Teste3.jpg);
     border-color: white;
     position: relative;
     left: 550px;
@@ -95,7 +95,7 @@ button:hover{
 }
 
 .Idi{
-    background-image: url(/src/img/teste69.jpg);
+    background-image: url(./src/img/Teste4.jpg);
     border-color: white;
     position: relative;
     left: 800px;
@@ -103,7 +103,7 @@ button:hover{
 }
 
 .Log{
-    background-image: url(/src/img/teste69.jpg);
+    background-image: url(./src/img/Teste5.jpg);
     border-color: white;
     position: relative;
     left: 1050px;
@@ -111,7 +111,7 @@ button:hover{
 }
 
 .Sis{
-    background-image: url(/src/img/teste69.jpg);
+    background-image: url(./src/img/Teste6.jpg);
     border-color: white;
     position: relative;
     left: 1300px;
@@ -141,35 +141,15 @@ button:hover{
     opacity: 1; 
 }
 
-.Adm{
-    background-image: url(/src/img/Teste3.jpg);
-    border-color: white;
-}
-
 .Img-Adm{
     position:relative;
     left: 15px;
     top: 10px;
 }
 
-.Idi{
-    background-image: url(/src/img/Teste4.jpg);
-    border-color: white;
-}
-
-.Log{
-    background-image: url(/src/img/Teste5.jpg);
-    border-color: white;
-}
-
 .Img-Log{
     position: relative;
     top: 10px;
-}
-
-.Sis{
-    background-image: url(/src/img/Teste6.jpg);
-    border-color: white;
 }
 
 .In, .Pu, .Mc{
