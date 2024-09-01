@@ -10,7 +10,7 @@ header{
 }
 
 .Corpo-Cursos{
-    background-image: url(./src/img/Background.jpg);
+    background-image: url(../src/img/Background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
