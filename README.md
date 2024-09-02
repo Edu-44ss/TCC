@@ -12,4 +12,4 @@ O Projeto está sendo feito em HTMl e CSS.
 
 Estaremos usando PHP, MySQL e Javascript futuramente.
 
-
+banco de dados encluido.
