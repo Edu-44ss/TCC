@@ -8,7 +8,7 @@ Nosso Projeto se trata de uma Instituição de Cursos chamada Gerações.
 
 Trabalhamos com múltiplos tipos de cursos, como por exemplo: Desenvolvimento de Sistemas, Idiomas, entre outros!
 
-O Projeto está sendo feito em HTMl e CSS.
+O Projeto está sendo feito em HTML e CSS.
 
 Estaremos usando PHP, MySQL e Javascript futuramente.
 
