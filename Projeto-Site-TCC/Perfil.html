@@ -3,17 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Perfil</title>
-    <link rel="stylesheet" href="/src/css/Estilo Perfil.css">
+    <title>Perfil de Usuário</title>
+    <link rel="stylesheet" href="./src/css/Estilo Perfil.css">
 </head>
-<body class="Corpo-Perfil">
-<header>
-<h1>Seu Perfil</h1>
-<nav>
-    <a href="../index.html"><button>Início</button></a>
-    <a href="./Cursos.html"><button>Nossos Cursos</button></a>
-    <a href="./Meus Cursos.html"><button>Meus Cursos</button></a>
-</nav>
-</header>
+<body>
+    <header>
+        <h1>Perfil de Usuário</h1>
+        <nav>
+            <a href="./index.html"><button>Início</button></a>
+            <a href="./Cursos.html"><button>Nossos Cursos</button></a>
+            <a href="./Meus Cursos.html"><button>Meus Cursos</button></a>
+        </nav>
+    </header>
+
+    <section class="perfil-container">
+        <div class="foto-perfil">
+            <img id="imgPreview" src="foto_perfil.jpg" alt="Foto de Perfil" class="img-preview">
+        </div>
+        <div class="info-perfil">
+            <h2 id="userName">Nome do Usuário</h2>
+            <p id="userEmail">Email: usuario@exemplo.com</p>
+            <p id="userPhone">Telefone: (11) 1234-5678</p>
+            <button class="btn-editar" onclick="exibirFormulario()">Editar Perfil</button>
+        </div>
+    </section>
+
+    <section id="form-editar" class="editar-perfil" style="display: none;">
+        <h2>Editar Perfil</h2>
+        <form id="uploadForm">
+            <label for="nomeUsuario">Nome do Usuário:</label>
+            <input type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Digite seu nome" required>
+            <br><br>
+            <label for="emailUsuario">Email:</label>
+            <input type="email" id="emailUsuario" name="emailUsuario" placeholder="Digite seu email" required>
+            <br><br>
+            <label for="telefoneUsuario">Telefone:</label>
+            <input type="text" id="telefoneUsuario" name="telefoneUsuario" placeholder="Digite seu telefone" required>
+            <br><br>
+            <label for="fotoPerfil">Escolher nova foto de perfil:</label>
+            <input type="file" id="fotoPerfil" name="fotoPerfil" accept="image/*" onchange="previewImagem()">
+            <br><br>
+            <button type="submit">Salvar Alterações</button>
+        </form>
+    </section>
+
+    <section class="cursos-container">
+        <h2>Cursos em Andamento</h2>
+        <ul>
+            <li>Curso 1 - Progresso: 50%</li>
+            <li>Curso 2 - Progresso: 75%</li>
+            <li>Curso 3 - Progresso: 20%</li>
+        </ul>
+    </section>
+
+    <script>
+        function exibirFormulario() {
+            document.getElementById("form-editar").style.display = "block";
+        }
+
+        function previewImagem() {
+            const file = document.getElementById("fotoPerfil").files[0];
+            const reader = new FileReader();
+
+            reader.onloadend = function () {
+                document.getElementById("imgPreview").src = reader.result;
+            };
+
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                document.getElementById("imgPreview").src = "foto_perfil.jpg";
+            }
+        }
+
+        document.getElementById("uploadForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const nome = document.getElementById("nomeUsuario").value;
+            const email = document.getElementById("emailUsuario").value;
+            const telefone = document.getElementById("telefoneUsuario").value;
+
+            document.getElementById("userName").textContent = nome;
+            document.getElementById("userEmail").textContent = "Email: " + email;
+            document.getElementById("userPhone").textContent = "Telefone: " + telefone;
+
+            alert("Perfil atualizado com sucesso!");
+
+            document.getElementById("form-editar").style.display = "none";
+        });
+    </script>
 </body>
 </html>
