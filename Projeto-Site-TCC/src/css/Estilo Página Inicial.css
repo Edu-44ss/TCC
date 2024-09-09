@@ -32,13 +32,9 @@ header{
 
 h1, h2, h3{
     color: white;
+    text-align: center;
 }
 
-
-#Bem-Vindo{
-    position: relative;
-    left: 39.5%;
-}
 
 button{
     position: relative;
