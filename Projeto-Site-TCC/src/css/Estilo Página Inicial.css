@@ -5,11 +5,11 @@ html{
 }
 
 .Logo {
-    width: 400px;
+    width: 600px;
     border: none;
     border-width: 0px;
     position:relative;
-    bottom: 20px;
+    bottom: 40px;
 }
 
 header{
