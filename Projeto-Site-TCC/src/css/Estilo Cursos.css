@@ -18,8 +18,8 @@ header{
 h2{
     color: white;
     position: relative;
-    left: 32%;
     text-decoration: underline white;
+    text-align: center;
 }
 
 h1{
@@ -40,7 +40,7 @@ button:hover{
     transform: scale(1.1);
 }
 
-.Comp, .Adm, .Idi, .Log, .Sis{
+.Comp, .Adm, .Idi, .Log{
     width: 200px;
     height: 200px;
     color: white;
@@ -51,13 +51,6 @@ button:hover{
     background-size: cover;
 }
 
-.Comp{
-    background-image: url(../img/teste69.jpg);
-    border-color: white;
-    position: relative;
-    left: 300px;
-    top: 200px;
-}
 
 .T-Comp{
     position: relative;
@@ -65,7 +58,7 @@ button:hover{
     font-size: 15px;
 }
 
-.T-Adm, .T-Idi, .T-Log, .T-Sis{
+.T-Adm, .T-Idi, .T-Log{
     position: relative;
     top: 20px;
     font-size: 15px;
@@ -86,11 +79,19 @@ button:hover{
     top: 20px;
 }
 
+.Comp{
+    background-image: url(../img/teste69.jpg);
+    border-color: white;
+    position: relative;
+    left: 300px;
+    top: 200px;
+}
+
 .Adm{
     background-image: url(../img/Teste3.jpg);
     border-color: white;
     position: relative;
-    left: 550px;
+    left: 650px;
     bottom: 20px;
 }
 
@@ -98,7 +99,7 @@ button:hover{
     background-image: url(../img/Teste4.jpg);
     border-color: white;
     position: relative;
-    left: 800px;
+    left: 950px;
     bottom: 240px;
 }
 
@@ -106,19 +107,11 @@ button:hover{
     background-image: url(../img/Teste5.jpg);
     border-color: white;
     position: relative;
-    left: 1050px;
+    left: 1300px;
     bottom: 460px;
 }
 
-.Sis{
-    background-image: url(../img/Teste6.jpg);
-    border-color: white;
-    position: relative;
-    left: 1300px;
-    bottom: 680px;
-}
-
-.Comp:after,.Adm:after, .Idi::after, .Log::after, .Sis::after {
+.Comp:after,.Adm:after, .Idi::after, .Log::after{
     content: attr(data-hover-text);
     color: blue;
     position: absolute;
@@ -135,7 +128,7 @@ button:hover{
     transition: all 0.5s;
 }
 
-.Comp:hover::after,.Adm:hover::after, .Idi:hover::after, .Log:hover::after, .Sis:hover::after{
+.Comp:hover::after,.Adm:hover::after, .Idi:hover::after, .Log:hover::after{
     top: 200px;
     left: 100px;
     opacity: 1; 
@@ -157,6 +150,7 @@ button:hover{
     background-color: black;
     border-width: 3px;
     border-color: blue;
+    border-radius: 40px;
 }
 
 .In{

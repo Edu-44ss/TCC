@@ -5,11 +5,11 @@ html{
 }
 
 .Logo {
-    width: 600px;
+    width: 800px;
     border: none;
     border-width: 0px;
     position:relative;
-    top: 20px;
+    bottom: 140px;
 }
 
 header{
@@ -55,11 +55,12 @@ button:hover{
     background-color: black;
     border-width: 3px;
     border-color: blue;
+    border-radius: 40px;
 }
 
 .Nome, .Cur, .Pu, .Log, .Mc{
     position: relative;
-    bottom: 170px;
+    bottom: 330px;
 }
 
 .Img-Index{
