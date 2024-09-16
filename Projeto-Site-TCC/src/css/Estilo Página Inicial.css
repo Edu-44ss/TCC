@@ -72,13 +72,59 @@ button:hover{
     left: 33%;
 }
 
+.Img-Sobre{
+    position:relative;
+    right: -30%;
+    box-shadow: 3px 3px 3px 3px rgb(164, 253, 253);
+    border-radius: 30px;
+    position: relative;
+    left: 3%;
+    width: 200px;
+}
+
+.Text1{
+    position: relative;
+    bottom: 200px;
+    font-size: 25px;
+}
+
+.Img-Interior{
+    position:relative;
+    box-shadow: 3px 3px 3px 3px rgb(164, 253, 253);
+    border-radius: 30px;
+    position: relative;
+    left: 77%;
+    width: 400px;
+}
+
+.Text2{
+    position: relative;
+    bottom: 200px;
+    font-size: 25px;
+}
+
+.Img-Empresa{
+    position:relative;
+    box-shadow: 3px 3px 3px 3px rgb(164, 253, 253);
+    border-radius: 30px;
+    position: relative;
+    width: 400px;
+}
+
+.Text3{
+    position: relative;
+    bottom: 200px;
+    font-size: 25px;
+    left: 20%;
+}
+
 /* Fim da categoria 1*/
 
 /*Categoria 2: Estrutura geral*/
 
 /*Fim da categoria 2*/
 
-/*Categoria 3: Estrutura final*/
+/*Categoria 3: Estrutura final*
 
 /*Fim da categoria 3*/
 
