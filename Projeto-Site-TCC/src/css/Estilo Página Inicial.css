@@ -63,14 +63,28 @@ button:hover{
     bottom: 330px;
 }
 
-.Img-Index{
+.Img-Slide{
     position:relative;
-    right: -30%;
+    right: 0%;
     box-shadow: 3px 3px 3px 3px rgb(164, 253, 253);
     border-radius: 30px;
     position: relative;
-    left: 33%;
+    left: 0%;
+    width: 600px;
+    height: 400px;
 }
+
+[data-component="slideshow"] .slide {
+    display: none;
+    text-align: center;
+    transition: opacity 0.5s, transform 0.5s; /* adiciona transição suave em opacidade e transformação */
+  }
+  
+  [data-component="slideshow"] .slide.active {
+    display: block;
+    opacity: 1;
+    transform: scale(1); /* define escala para 1 quando o slide é ativado */
+  }
 
 .Img-Sobre{
     position:relative;
@@ -86,6 +100,8 @@ button:hover{
     position: relative;
     bottom: 200px;
     font-size: 25px;
+    position: relative;
+    left: 90px;
 }
 
 .Img-Interior{
@@ -115,7 +131,7 @@ button:hover{
     position: relative;
     bottom: 200px;
     font-size: 25px;
-    left: 20%;
+    left: 120px;
 }
 
 /* Fim da categoria 1*/
