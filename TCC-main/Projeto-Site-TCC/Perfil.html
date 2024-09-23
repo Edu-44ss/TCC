@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuário</title>
+    <link rel="stylesheet" href="./src/css/Estilo Perfil.css">
+</head>
+<body>
+    <header>
+        <h1>Perfil de Usuário</h1>
+        <nav>
+            <a href="../index.html"><button>Início</button></a>
+            <a href="./Cursos.html"><button>Nossos Cursos</button></a>
+            <a href="./Meus Cursos.html"><button>Meus Cursos</button></a>
+        </nav>
+    </header>
+
+    <section class="perfil-container">
+        <div class="foto-perfil">
+            <img id="imgPreview" src="foto_perfil.jpg" alt="Foto de Perfil" class="img-preview">
+        </div>
+        <div class="info-perfil">
+            <h2 id="userName">Nome do Usuário</h2>
+            <p id="userEmail">Email: usuario@exemplo.com</p>
+            <p id="userPhone">Telefone: (11) 1234-5678</p>
+            <button class="btn-editar" onclick="exibirFormulario()">Editar Perfil</button>
+        </div>
+    </section>
+
+    <section class="editar-perfil">
+        <h2>Editar Perfil</h2>
+        <form id="uploadForm">
+            <label for="nomeUsuario">Nome do Usuário:</label>
+            <input type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Digite seu nome" required style="width: 300px;">
+            <br><br>
+            <label for="emailUsuario">Email:</label>
+            <input type="email" id="emailUsuario" name="emailUsuario" placeholder="Digite seu email" required style="width: 400px;">
+            <br><br>
+            <label for="telefoneUsuario">Telefone:</label>
+            <input type="text" id="telefoneUsuario" name="telefoneUsuario" placeholder="Digite seu número de telefone" required style="width: 200px;">
+            <br><br>
+            <label for="fotoPerfil">Escolher nova foto de perfil:</label>
+            <input type="file" id="fotoPerfil" name="fotoPerfil" accept="image/*" onchange="previewImagem()">
+            <br><br>
+            <button type="submit">Salvar Alterações</button>
+        </form>
+    </section>
+    
+    <section class="cursos-container">
+        <h2>Cursos em Andamento</h2>
+        <ul>
+            <li>Curso 1 - Progresso: 50%</li>
+            <li>Curso 2 - Progresso: 75%</li>
+            <li>Curso 3 - Progresso: 20%</li>
+        </ul>
+    </section>
+
+    <script src="./src/js/Script Perfil.js"></script>
+</body>
+</html>
