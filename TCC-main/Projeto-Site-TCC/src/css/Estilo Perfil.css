@@ -1,0 +1,102 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../img/Background.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #1e3c72, #2a5298, #3a72c4); /* Gradiente azul na barra de navegação */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a button {
+    background-color: #4676c9; /* Cor sólida para os botões */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav a button:hover {
+    background-color: #3a6bb0;
+}
+
+.perfil-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.foto-perfil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.info-perfil h2 {
+    margin: 0;
+}
+
+.editar-perfil {
+    background-color: #fff;
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cursos-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cursos-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cursos-container ul li {
+    background-color: #e9e9e9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.editar-perfil input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.editar-perfil button {
+    background-color: #4676c9; /* Cor sólida para os botões de formulário */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.editar-perfil button:hover {
+    background-color: #3a6bb0;
+}

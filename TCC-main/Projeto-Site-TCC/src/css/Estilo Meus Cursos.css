@@ -1,0 +1,14 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f0ff; /* Cor sólida para o fundo do corpo da página */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #1e3c72, #2a5298, #3a72c4); /* Gradiente azul na barra de navegação */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}

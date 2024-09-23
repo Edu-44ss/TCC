@@ -1,0 +1,189 @@
+/*Categoria 1: Ínicio e Cabeçalho*/
+
+header{
+    border: 10px;
+    border-color: rgb(62, 178, 231);
+    background-color: black;
+    border-style: ridge;
+    text-align: center;
+    border-radius: 70px;
+}
+
+.Corpo-Cursos{
+    background-image: url(../img/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2{
+    color: white;
+    position: relative;
+    text-decoration: underline white;
+    text-align: center;
+}
+
+h1{
+    color: white;
+}
+
+button{
+    position: relative;
+    bottom: 10px;
+    border-width: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-size: 200px;
+    background-position: center;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.Comp, .Adm, .Idi, .Log{
+    width: 200px;
+    height: 200px;
+    color: white;
+    position: relative;
+    border-radius: 50px;
+    border-style:ridge;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.T-Comp{
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+}
+
+.T-Adm, .T-Idi, .T-Log{
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+}
+
+.T-Log{
+    position: relative;
+    right: 3px;
+}
+
+.Img-Comp{
+    position: relative;
+    top: 30px;
+}
+
+.Img-Idi{
+    position: relative;
+    top: 20px;
+}
+
+.Comp{
+    background-image: url(../img/teste69.jpg);
+    border-color: white;
+    position: relative;
+    left: 300px;
+    top: 200px;
+}
+
+.Adm{
+    background-image: url(../img/Teste3.jpg);
+    border-color: white;
+    position: relative;
+    left: 650px;
+    bottom: 20px;
+}
+
+.Idi{
+    background-image: url(../img/Teste4.jpg);
+    border-color: white;
+    position: relative;
+    left: 950px;
+    bottom: 240px;
+}
+
+.Log{
+    background-image: url(../img/Teste5.jpg);
+    border-color: white;
+    position: relative;
+    left: 1300px;
+    bottom: 460px;
+}
+
+.Comp:after,.Adm:after, .Idi::after, .Log::after{
+    content: attr(data-hover-text);
+    color: blue;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-right: 5px;
+    border-radius: 50px;
+    display: block;
+    opacity: 0; 
+    transition: all 0.5s;
+}
+
+.Comp:hover::after,.Adm:hover::after, .Idi:hover::after, .Log:hover::after{
+    top: 200px;
+    left: 100px;
+    opacity: 1; 
+}
+
+.Img-Adm{
+    position:relative;
+    left: 15px;
+    top: 10px;
+}
+
+.Img-Log{
+    position: relative;
+    top: 10px;
+}
+
+.In, .Pu, .Mc{
+    color: white;
+    background-color: black;
+    border-width: 3px;
+    border-color: blue;
+    border-radius: 40px;
+}
+
+.In{
+    position: relative;
+    right: 3%;
+}
+
+.Pu{
+    position: relative;
+    left: 1%;
+}
+
+.Mc{
+    position: relative;
+    left: 4%;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Fim da categoria 1*/
+
+/*Categoria 2: Estrutura geral*/
+
+/*Fim da categoria 2*/
+
+/*Categoria 3: Estrutura final*/
+
+/*Fim da categoria 3*/
+
+
+
+/*Categoria 4: Outros*/
+
+/*Fim da categoria 4*/
