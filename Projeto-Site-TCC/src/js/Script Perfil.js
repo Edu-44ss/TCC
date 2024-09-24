@@ -1,7 +1,14 @@
-function exibirFormulario() {
-    document.getElementById("form-editar").style.display = "block";
+ // Função para exibir o modal
+ function exibirFormulario() {
+    document.getElementById("myModal").style.display = "block";
 }
 
+// Função para fechar o modal
+function fecharModal() {
+    document.getElementById("myModal").style.display = "none";
+}
+
+// Função para pré-visualizar a imagem
 function previewImagem() {
     const file = document.getElementById("fotoPerfil").files[0];
     const reader = new FileReader();
@@ -17,6 +24,7 @@ function previewImagem() {
     }
 }
 
+// Adiciona o evento de envio do formulário
 document.getElementById("uploadForm").addEventListener("submit", function(event) {
     event.preventDefault();
     const nome = document.getElementById("nomeUsuario").value;
@@ -29,5 +37,12 @@ document.getElementById("uploadForm").addEventListener("submit", function(event)
 
     alert("Perfil atualizado com sucesso!");
 
-    document.getElementById("form-editar").style.display = "none";
+    fecharModal(); // Fecha o modal após salvar
 });
+
+// Fecha o modal se o usuário clicar fora dele
+window.onclick = function(event) {
+    if (event.target == document.getElementById("myModal")) {
+        fecharModal();
+    }
+}
