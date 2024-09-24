@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 /* Estilo geral */
 body {
     font-family: Arial, sans-serif;
@@ -6,24 +9,40 @@ body {
     padding: 0;
 }
 
-header {
-    background: linear-gradient(to right, #1e3c72, #2a5298, #3a72c4); /* Gradiente azul na barra de navegação */
-    color: #fff;
-    padding: 15px;
+h1{
+   color: #fff;
+}
+
+header{
+    border: 10px;
+    border-color: rgb(62, 178, 231);
+    background-color: black;
+    border-style: ridge;
     text-align: center;
+    border-radius: 70px;
 }
 
-nav a button {
-    background-color: #4676c9; /* Cor sólida para os botões */
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+nav a button{
+    position: relative;
+    bottom: 10px;
+    border-width: 5px;
     cursor: pointer;
+    transition: transform 0.3s;
+    background-size: 200px;
+    background-position: center;
 }
 
-nav a button:hover {
-    background-color: #3a6bb0;
+nav a button:hover{
+    transform: scale(1.1);
+}
+
+.In, .Cur, .Mc{
+    color: white;
+    background-color: black;
+    border-width: 3px;
+    border-color: blue;
+    border-radius: 40px;
+    position: relative;
 }
 
 .perfil-container {
@@ -43,19 +62,6 @@ nav a button:hover {
     border-radius: 50%;
     object-fit: cover;
     margin-right: 20px;
-}
-
-.info-perfil h2 {
-    margin: 0;
-}
-
-.editar-perfil {
-    background-color: #fff;
-    margin: 20px auto;
-    width: 80%;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .cursos-container {
@@ -79,24 +85,37 @@ nav a button:hover {
     border-radius: 5px;
 }
 
-.editar-perfil input {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+/* Estilos para o modal */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fica em cima da página */
+    z-index: 1; /* Fica na frente */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Habilita rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo com opacidade */
 }
 
-.editar-perfil button {
-    background-color: #4676c9; /* Cor sólida para os botões de formulário */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+.modal-content {
+    background-color: white; /* Cor de fundo do modal */
+    margin: 10% auto; /* Centraliza o modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largura do modal */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
     cursor: pointer;
-    margin-top: 15px;
-}
-
-.editar-perfil button:hover {
-    background-color: #3a6bb0;
 }
