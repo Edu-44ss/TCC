@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil de Usuário</title>
     <link rel="stylesheet" href="./src/css/Estilo Perfil.css">
+    <script src="./src/js/Script Perfil.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Perfil de Usuário</h1>
         <nav>
-            <a href="../index.html"><button>Início</button></a>
-            <a href="./Cursos.html"><button>Nossos Cursos</button></a>
-            <a href="./Meus Cursos.html"><button>Meus Cursos</button></a>
+            <a href="../index.html"><button class="In">Início</button></a>
+            <a href="./Cursos.html"><button class="Cur">Nossos Cursos</button></a>
+            <a href="./Meus Cursos.html"><button class="Mc">Meus Cursos</button></a>
         </nav>
     </header>
 
@@ -28,25 +29,29 @@
         </div>
     </section>
 
-    <section class="editar-perfil">
-        <h2>Editar Perfil</h2>
-        <form id="uploadForm">
-            <label for="nomeUsuario">Nome do Usuário:</label>
-            <input type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Digite seu nome" required style="width: 300px;">
-            <br><br>
-            <label for="emailUsuario">Email:</label>
-            <input type="email" id="emailUsuario" name="emailUsuario" placeholder="Digite seu email" required style="width: 400px;">
-            <br><br>
-            <label for="telefoneUsuario">Telefone:</label>
-            <input type="text" id="telefoneUsuario" name="telefoneUsuario" placeholder="Digite seu número de telefone" required style="width: 200px;">
-            <br><br>
-            <label for="fotoPerfil">Escolher nova foto de perfil:</label>
-            <input type="file" id="fotoPerfil" name="fotoPerfil" accept="image/*" onchange="previewImagem()">
-            <br><br>
-            <button type="submit">Salvar Alterações</button>
-        </form>
-    </section>
-    
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h2>Editar Perfil</h2>
+            <form id="uploadForm">
+                <label for="nomeUsuario">Nome do Usuário:</label>
+                <input type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Digite seu nome" required style="width: 100%;">
+                <br><br>
+                <label for="emailUsuario">Email:</label>
+                <input type="email" id="emailUsuario" name="emailUsuario" placeholder="Digite seu email" required style="width: 100%;">
+                <br><br>
+                <label for="telefoneUsuario">Telefone:</label>
+                <input type="text" id="telefoneUsuario" name="telefoneUsuario" placeholder="Digite seu número de telefone" required style="width: 100%;">
+                <br><br>
+                <label for="fotoPerfil">Escolher nova foto de perfil:</label>
+                <input type="file" id="fotoPerfil" name="fotoPerfil" accept="image/*" onchange="previewImagem()" required style="width: 100%;">
+                <br><br>
+                <button type="submit">Salvar Alterações</button>
+            </form>
+        </div>
+    </div>
+
     <section class="cursos-container">
         <h2>Cursos em Andamento</h2>
         <ul>
@@ -55,7 +60,5 @@
             <li>Curso 3 - Progresso: 20%</li>
         </ul>
     </section>
-
-    <script src="./src/js/Script Perfil.js"></script>
 </body>
 </html>
