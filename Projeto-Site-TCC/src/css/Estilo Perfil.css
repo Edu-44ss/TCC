@@ -1,121 +1,131 @@
+/* Estilo básico para rolagem suave em links âncoras */
 html{
     scroll-behavior: smooth;
 }
-/* Estilo geral */
+
+/* Estilos gerais do corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    background-image: url(../img/Background.jpg);
+    font-family: Arial, sans-serif; /* Define a fonte global */
+    background-image: url(../img/Background.jpg); /* Define a imagem de fundo */
     margin: 0;
     padding: 0;
 }
 
-h1{
-   color: #fff;
+/* Estilo do título principal da página */
+h1 {
+    color: #fff; /* Cor do texto branca */
 }
 
-header{
-    border: 10px;
-    border-color: rgb(62, 178, 231);
-    background-color: black;
-    border-style: ridge;
-    text-align: center;
-    border-radius: 70px;
+/* Estilo do cabeçalho */
+header {
+    border: 10px ridge rgb(62, 178, 231); /* Bordas com estilo ridge */
+    background-color: black; /* Cor de fundo preta */
+    text-align: center; /* Centraliza o texto */
+    border-radius: 70px; /* Bordas arredondadas */
 }
 
-nav a button{
+/* Estilos dos botões de navegação */
+nav a button {
     position: relative;
-    bottom: 10px;
+    bottom: 10px; /* Move os botões ligeiramente para baixo */
     border-width: 5px;
-    cursor: pointer;
-    transition: transform 0.3s;
-    background-size: 200px;
-    background-position: center;
+    cursor: pointer; /* Altera o cursor para indicar interatividade */
+    transition: transform 0.3s; /* Transição suave ao passar o mouse */
 }
 
-nav a button:hover{
-    transform: scale(1.1);
+/* Efeito hover nos botões de navegação */
+nav a button:hover {
+    transform: scale(1.1); /* Aumenta levemente o tamanho ao passar o mouse */
 }
 
-.In, .Cur, .Mc{
-    color: white;
-    background-color: black;
+/* Estilos específicos para os botões */
+.In, .Cur, .Mc {
+    color: white; /* Cor do texto branca */
+    background-color: black; /* Cor de fundo preta */
     border-width: 3px;
-    border-color: blue;
-    border-radius: 40px;
-    position: relative;
+    border-color: blue; /* Bordas azuis */
+    border-radius: 40px; /* Bordas arredondadas */
 }
 
+/* Estilo do container que envolve o perfil */
 .perfil-container {
-    display: flex;
-    align-items: center;
+    display: flex; /* Organiza os elementos em linha */
+    align-items: center; /* Alinha verticalmente ao centro */
     padding: 20px;
-    background-color: #fff;
-    margin: 20px auto;
+    background-color: #fff; /* Fundo branco */
+    margin: 20px auto; /* Margem automática para centralizar */
     width: 80%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adiciona sombra sutil ao redor */
 }
 
+/* Estilos da foto de perfil */
 .foto-perfil img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 20px;
+    width: 150px; /* Define a largura da imagem */
+    height: 150px; /* Define a altura da imagem */
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Garante que a imagem preencha o espaço de forma proporcional */
+    margin-right: 20px; /* Margem à direita para distanciar da informação */
 }
 
+/* Estilo do container de cursos */
 .cursos-container {
-    background-color: #fff;
+    background-color: #fff; /* Fundo branco */
     padding: 20px;
-    margin: 20px auto;
+    margin: 20px auto; /* Centraliza o container */
     width: 80%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra sutil ao redor */
 }
 
+/* Remove a estilização padrão de lista */
 .cursos-container ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove o preenchimento interno */
 }
 
+/* Estilos para os itens da lista de cursos */
 .cursos-container ul li {
-    background-color: #e9e9e9;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+    background-color: #e9e9e9; /* Cor de fundo dos itens */
+    margin: 5px 0; /* Espaçamento vertical entre os itens */
+    padding: 10px; /* Preenchimento interno para os itens */
+    border-radius: 5px; /* Bordas arredondadas */
 }
 
 /* Estilos para o modal */
 .modal {
     display: none; /* Escondido por padrão */
-    position: fixed; /* Fica em cima da página */
-    z-index: 1; /* Fica na frente */
+    position: fixed; /* Fixa o modal sobre a página */
+    z-index: 1; /* Eleva o modal em relação aos outros elementos */
     left: 0;
     top: 0;
-    width: 100%; /* Largura total */
-    height: 100%; /* Altura total */
-    overflow: auto; /* Habilita rolagem se necessário */
-    background-color: rgba(0, 0, 0, 0.4); /* Fundo com opacidade */
+    width: 100%; /* Largura total da página */
+    height: 100%; /* Altura total da página */
+    overflow: auto; /* Permite rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo escurecido e transparente */
 }
 
+/* Estilos do conteúdo do modal */
 .modal-content {
-    background-color: white; /* Cor de fundo do modal */
-    margin: 10% auto; /* Centraliza o modal */
+    background-color: white; /* Fundo branco para o conteúdo do modal */
+    margin: 10% auto; /* Centraliza o modal verticalmente */
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Largura do modal */
+    border: 1px solid #888; /* Bordas cinza */
+    width: 80%; /* Define a largura do modal */
 }
 
+/* Estilos do botão de fechar o modal */
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    color: #aaa; /* Cor cinza clara */
+    float: right; /* Alinha à direita */
+    font-size: 28px; /* Tamanho grande da fonte */
+    font-weight: bold; /* Fonte em negrito */
 }
 
+/* Efeito hover para o botão de fechar */
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+    color: black; /* Altera para preto ao passar o mouse */
+    text-decoration: none; /* Remove sublinhado */
+    cursor: pointer; /* Altera o cursor para indicar interatividade */
 }
