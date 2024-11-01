@@ -35,6 +35,14 @@ h1, h2, h3{
     text-align: center;
 }
 
+h2{
+    font-size: 50px;
+}
+
+#Bem-Vindo, #Sobre{
+    font-family:cursive;
+}
+
 
 button{
     position: relative;
@@ -93,10 +101,16 @@ button:hover{
     border-radius: 30px;
     position: relative;
     left: 3%;
-    width: 200px;
+    width: 250px;
+    height: 300px;
+
 }
 
-.Text1{
+#Text0{
+    font-size: 20px;
+}
+
+#Text1{
     position: relative;
     bottom: 200px;
     font-size: 25px;
@@ -109,13 +123,15 @@ button:hover{
     box-shadow: 3px 3px 3px 3px rgb(164, 253, 253);
     border-radius: 30px;
     position: relative;
+    bottom: 150px;
     left: 77%;
-    width: 400px;
+    width: 250px;
+    height: 300px;
 }
 
-.Text2{
+#Text2{
     position: relative;
-    bottom: 200px;
+    bottom: 350px;
     font-size: 25px;
 }
 
@@ -124,14 +140,21 @@ button:hover{
     box-shadow: 3px 3px 3px 3px rgb(164, 253, 253);
     border-radius: 30px;
     position: relative;
-    width: 400px;
+    bottom: 250px;
+    left: 650px;
+    width: 600px;
+    height: 400px;
 }
 
-.Text3{
+#Text3{
     position: relative;
     bottom: 200px;
     font-size: 25px;
-    left: 120px;
+    left: 50px;
+}
+
+#Text0, #Text1, #Text2, #Text3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* Fim da categoria 1*/
