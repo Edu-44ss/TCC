@@ -199,6 +199,7 @@ ul{
     background-image: linear-gradient(cyan, black);
     left: 1700px;
     bottom: 20px;
+    border-color: white;
 }
 
 #Img-Usuário{
@@ -217,6 +218,7 @@ ul{
     font-family: cursive;
     font-size: 20px;
     background-image: linear-gradient(yellow, black);
+    border-color: white;
 }
 
 #Img-Início{
