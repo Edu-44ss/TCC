@@ -4,7 +4,7 @@ html{
     scroll-behavior: smooth;
 }
 
-.Logo {
+#Logo {
     width: 800px;
     border: none;
     border-width: 0px;
@@ -20,7 +20,7 @@ header{
     text-align: center;
     border-radius: 70px;
     width: 100%;
-    height: 250px;
+    height: 200px;
 }
 
 
@@ -58,17 +58,28 @@ button:hover{
     transform: scale(1.1);
 }
 
-.Cur, .Pu, .Log, .Mc{
+#Botão-Usuário{
     color: white;
-    background-color: black;
-    border-width: 3px;
-    border-color: blue;
-    border-radius: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    font-family: cursive;
+    font-size: 20px;
+    background-image: linear-gradient(cyan, black);
 }
 
-.Nome, .Cur, .Pu, .Log, .Mc{
+#Img-Usuário{
+    color: white;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    left: -8px;
+}
+
+#Nome{
     position: relative;
     bottom: 330px;
+    font-family:cursive;
 }
 
 .Img-Slide{
@@ -106,16 +117,10 @@ button:hover{
 
 }
 
-#Text0{
-    font-size: 20px;
-}
-
 #Text1{
     position: relative;
     bottom: 200px;
-    font-size: 25px;
     position: relative;
-    left: 90px;
 }
 
 .Img-Interior{
@@ -132,7 +137,6 @@ button:hover{
 #Text2{
     position: relative;
     bottom: 350px;
-    font-size: 25px;
 }
 
 .Img-Empresa{
@@ -149,12 +153,24 @@ button:hover{
 #Text3{
     position: relative;
     bottom: 200px;
-    font-size: 25px;
-    left: 50px;
 }
 
 #Text0, #Text1, #Text2, #Text3{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:cursive;
+    font-size: 30px;
+}
+
+#Pop-Up1{
+    position: relative;
+    top: 100px;
+    border-style:ridge;
+    border-radius: 20px;
+    background-image: linear-gradient(cyan, blue);
+    width: 200px;
+    height: 100px;
+    font-family: cursive;
+    color: white;
+    font-size: 25px;
 }
 
 /* Fim da categoria 1*/
