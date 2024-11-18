@@ -59,14 +59,14 @@ button:hover{
 }
 
 #Botão-Usuário{
-    color: white;
+    color: black;
     width: 100px;
     height: 100px;
     border-radius: 100px;
     font-family: cursive;
     font-size: 20px;
     background-image: linear-gradient(cyan, black);
-    border-color: white;
+    border-color: blue;
 }
 
 #Img-Usuário{
