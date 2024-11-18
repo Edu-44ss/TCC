@@ -170,6 +170,7 @@ button:hover{
     height: 100px;
     font-family: cursive;
     color: white;
+    border-color: white;
     font-size: 25px;
 }
 
