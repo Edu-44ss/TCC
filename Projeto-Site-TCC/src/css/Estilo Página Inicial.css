@@ -178,12 +178,12 @@ button:hover{
 
 @font-face {
     font-family: DogFiles;
-    src: url(/Projeto-Site-TCC/src/Font/DogFiles/Dogfiles.otf);
+    src: url(./Projeto-Site-TCC/src/Font/DogFiles/Dogfiles.otf);
 }
 
 @font-face {
     font-family: Smack;
-    src: url(/Projeto-Site-TCC/src/Font/Smack/Smack\ Laideth\ Down\ 2024.otf);
+    src: url(./Projeto-Site-TCC/src/Font/Smack/Smack\ Laideth\ Down\ 2024.otf);
 }
 
 /* Fim da categoria 1*/
