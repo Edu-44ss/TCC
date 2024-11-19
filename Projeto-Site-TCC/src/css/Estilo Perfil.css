@@ -16,6 +16,18 @@ h1 {
     color: #fff; /* Cor do texto branca */
 }
 
+button{
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-width: 5px;
+    position: relative;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+
 /* Estilo do cabeçalho */
 header {
     border: 10px ridge rgb(62, 178, 231); /* Bordas com estilo ridge */
@@ -36,15 +48,6 @@ nav a button {
 /* Efeito hover nos botões de navegação */
 nav a button:hover {
     transform: scale(1.1); /* Aumenta levemente o tamanho ao passar o mouse */
-}
-
-/* Estilos específicos para os botões */
-.In, .Cur, .Mc {
-    color: white; /* Cor do texto branca */
-    background-color: black; /* Cor de fundo preta */
-    border-width: 3px;
-    border-color: blue; /* Bordas azuis */
-    border-radius: 40px; /* Bordas arredondadas */
 }
 
 /* Estilo do container que envolve o perfil */
@@ -128,4 +131,44 @@ nav a button:hover {
     color: black; /* Altera para preto ao passar o mouse */
     text-decoration: none; /* Remove sublinhado */
     cursor: pointer; /* Altera o cursor para indicar interatividade */
+}
+
+#Botão-Cursos{
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    font-family: cursive;
+    font-size: 20px;
+    background-image: linear-gradient(lime, black);
+    left: 1700px;
+    bottom: 20px;
+    border-color: white;
+}
+
+#Img-Cursos{
+    color: white;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    left: 0px;
+}
+
+#Botão-Início2{
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    font-family: cursive;
+    font-size: 20px;
+    background-image: linear-gradient(yellow, black);
+    border-color: white;
+}
+
+#Img-Início2{
+    color: white;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    right: 0px;
 }
