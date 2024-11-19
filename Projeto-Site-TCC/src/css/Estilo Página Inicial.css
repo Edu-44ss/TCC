@@ -80,7 +80,8 @@ button:hover{
 #Nome{
     position: relative;
     bottom: 330px;
-    font-family:cursive;
+    font-family:Smack;
+    font-size: 40px;
 }
 
 .Img-Slide{
@@ -169,10 +170,20 @@ button:hover{
     background-image: linear-gradient(cyan, blue);
     width: 200px;
     height: 100px;
-    font-family: cursive;
+    font-family: DogFiles;
     color: white;
     border-color: white;
-    font-size: 25px;
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: DogFiles;
+    src: url(/Projeto-Site-TCC/src/Font/DogFiles/Dogfiles.otf);
+}
+
+@font-face {
+    font-family: Smack;
+    src: url(/Projeto-Site-TCC/src/Font/Smack/Smack\ Laideth\ Down\ 2024.otf);
 }
 
 /* Fim da categoria 1*/
