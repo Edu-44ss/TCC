@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuário</title>
+    <link rel="stylesheet" href="./src/css/Estilo Perfil.css">
+    <script src="./src/js/Script Perfil.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Perfil de Usuário</h1>
+    </header>
+    <br>
+    <a href="../index.html"><button id="Botão-Início2"><img id="Img-Início2" src="../Projeto-Site-TCC/src/img/Início.png" alt="">Início</button></a>
+    <a href="./Cursos.html"><button id="Botão-Cursos"><img id="Img-Cursos" src="../Projeto-Site-TCC/src/img/Cursos.png" alt="">Cursos</button></a>
+    <section class="perfil-container">
+        <div class="foto-perfil">
+            <img id="imgPreview" src="foto_perfil.jpg" alt="Foto de Perfil" class="img-preview">
+        </div>
+        <div class="info-perfil">
+            <h2 id="userName">Nome do Usuário</h2>
+            <p id="userEmail">Email: usuario@exemplo.com</p>
+            <p id="userPhone">Telefone: (11) 1234-5678</p>
+            <button class="btn-editar" onclick="exibirFormulario()">Editar Perfil</button>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h2>Editar Perfil</h2>
+            <form id="uploadForm">
+                <label for="nomeUsuario">Nome do Usuário:</label>
+                <input type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Digite seu nome" required style="width: 100%;">
+                <br><br>
+                <label for="emailUsuario">Email:</label>
+                <input type="email" id="emailUsuario" name="emailUsuario" placeholder="Digite seu email" required style="width: 100%;">
+                <br><br>
+                <label for="telefoneUsuario">Telefone:</label>
+                <input type="text" id="telefoneUsuario" name="telefoneUsuario" placeholder="Digite seu número de telefone" required style="width: 100%;">
+                <br><br>
+                <label for="fotoPerfil">Escolher nova foto de perfil:</label>
+                <input type="file" id="fotoPerfil" name="fotoPerfil" accept="image/*" onchange="previewImagem()" required style="width: 100%;">
+                <br><br>
+                <button type="submit">Salvar Alterações</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="cursos-container">
+        <h2>Cursos em Andamento</h2>
+        <ul>
+            <li>Curso 1 - Progresso: 50%</li>
+            <li>Curso 2 - Progresso: 75%</li>
+            <li>Curso 3 - Progresso: 20%</li>
+        </ul>
+    </section>
+</body>
+
+<!-- Comando para o rodapé simples-->
+<footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <p>&copy; 2024 Gerações Ensino. Todos os direitos reservados.</p>
+      </div>
+      <div class="footer-section">
+        <ul>
+          <li><a href="termos-de-uso">Termos de Uso</a></li>
+          <li><a href="regras">Regras</a></li>
+          <li><a href="e-mail:Gerações@gmail.com">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+<!-- comando para deixar o rodapé mais bonito -->
+  <style>
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+  
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    .footer-section {
+      margin: 10px;
+    }
+  
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    .footer-section ul li {
+      display: inline;
+      margin-right: 15px;
+    }
+  
+    .footer-section ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+  
+    .footer-section ul li a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+</html>
