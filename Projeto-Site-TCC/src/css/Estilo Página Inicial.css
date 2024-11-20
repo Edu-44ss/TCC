@@ -40,7 +40,7 @@ h2{
 }
 
 #Bem-Vindo, #Sobre{
-    font-family:cursive;
+    font-family:Paratha;
 }
 
 
@@ -84,7 +84,7 @@ button:hover{
     width: 100px;
     height: 100px;
     border-radius: 100px;
-    font-family: cursive;
+    font-family:Paratha;
     font-size: 20px;
     background-image: linear-gradient(cyan, black);
     border-color: white;
@@ -101,7 +101,7 @@ button:hover{
 #Nome{
     position: relative;
     bottom: 330px;
-    font-family:Smack;
+    font-family:Paratha;
     font-size: 40px;
 }
 
@@ -179,7 +179,7 @@ button:hover{
 }
 
 #Text0, #Text1, #Text2, #Text3{
-    font-family:cursive;
+    font-family:Paratha;
     font-size: 30px;
 }
 
@@ -203,8 +203,8 @@ button:hover{
 }
 
 @font-face {
-    font-family: Smack;
-    src: url(../Font/Smack/Smack.otf);
+    font-family: Paratha;
+    src: url(../Font/Paratha/Paratha.ttf);
 }
 
 /* Fim da categoria 1*/
