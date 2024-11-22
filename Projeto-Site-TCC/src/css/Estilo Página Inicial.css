@@ -63,7 +63,7 @@ button:hover{
     width: 100px;
     height: 100px;
     border-radius: 100px;
-    font-family: cursive;
+    font-family: Paratha;
     font-size: 20px;
     background-image: linear-gradient(lime, black);
     left: 1700px;
@@ -185,7 +185,7 @@ button:hover{
 
 #Pop-Up1{
     position: relative;
-    top: 100px;
+    top: 50px;
     border-style:ridge;
     border-radius: 20px;
     background-image: linear-gradient(cyan, blue);
