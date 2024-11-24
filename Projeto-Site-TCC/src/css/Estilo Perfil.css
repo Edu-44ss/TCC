@@ -1,0 +1,179 @@
+/* Estilo básico para rolagem suave em links âncoras */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte global */
+    background-image: url(../img/Background.jpg); /* Define a imagem de fundo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do título principal da página */
+h1 {
+    color: #fff; /* Cor do texto branca */
+}
+
+button{
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-width: 5px;
+    position: relative;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+
+/* Estilo do cabeçalho */
+header {
+    border: 10px ridge rgb(62, 178, 231); /* Bordas com estilo ridge */
+    background-color: black; /* Cor de fundo preta */
+    text-align: center; /* Centraliza o texto */
+    border-radius: 70px; /* Bordas arredondadas */
+}
+
+/* Estilos dos botões de navegação */
+nav a button {
+    position: relative;
+    bottom: 10px; /* Move os botões ligeiramente para baixo */
+    border-width: 5px;
+    cursor: pointer; /* Altera o cursor para indicar interatividade */
+    transition: transform 0.3s; /* Transição suave ao passar o mouse */
+}
+
+/* Efeito hover nos botões de navegação */
+nav a button:hover {
+    transform: scale(1.1); /* Aumenta levemente o tamanho ao passar o mouse */
+}
+
+/* Estilo do container que envolve o perfil */
+.perfil-container {
+    display: flex; /* Organiza os elementos em linha */
+    align-items: center; /* Alinha verticalmente ao centro */
+    padding: 20px;
+    background-color: #fff; /* Fundo branco */
+    margin: 20px auto; /* Margem automática para centralizar */
+    width: 80%;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adiciona sombra sutil ao redor */
+}
+
+/* Estilos da foto de perfil */
+.foto-perfil img {
+    width: 150px; /* Define a largura da imagem */
+    height: 150px; /* Define a altura da imagem */
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Garante que a imagem preencha o espaço de forma proporcional */
+    margin-right: 20px; /* Margem à direita para distanciar da informação */
+}
+
+/* Estilo do container de cursos */
+.cursos-container {
+    background-color: #fff; /* Fundo branco */
+    padding: 20px;
+    margin: 20px auto; /* Centraliza o container */
+    width: 80%;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra sutil ao redor */
+}
+
+/* Remove a estilização padrão de lista */
+.cursos-container ul {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove o preenchimento interno */
+}
+
+/* Estilos para os itens da lista de cursos */
+.cursos-container ul li {
+    background-color: #e9e9e9; /* Cor de fundo dos itens */
+    margin: 5px 0; /* Espaçamento vertical entre os itens */
+    padding: 10px; /* Preenchimento interno para os itens */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fixa o modal sobre a página */
+    z-index: 1; /* Eleva o modal em relação aos outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total da página */
+    height: 100%; /* Altura total da página */
+    overflow: auto; /* Permite rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo escurecido e transparente */
+}
+
+/* Estilos do conteúdo do modal */
+.modal-content {
+    background-color: white; /* Fundo branco para o conteúdo do modal */
+    margin: 10% auto; /* Centraliza o modal verticalmente */
+    padding: 20px;
+    border: 1px solid #888; /* Bordas cinza */
+    width: 80%; /* Define a largura do modal */
+}
+
+/* Estilos do botão de fechar o modal */
+.close {
+    color: #aaa; /* Cor cinza clara */
+    float: right; /* Alinha à direita */
+    font-size: 28px; /* Tamanho grande da fonte */
+    font-weight: bold; /* Fonte em negrito */
+}
+
+/* Efeito hover para o botão de fechar */
+.close:hover,
+.close:focus {
+    color: black; /* Altera para preto ao passar o mouse */
+    text-decoration: none; /* Remove sublinhado */
+    cursor: pointer; /* Altera o cursor para indicar interatividade */
+}
+
+#Botão-Cursos{
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    font-family:Paratha;
+    font-size: 15px;
+    background-image: linear-gradient(lime, black);
+    left: 1700px;
+    bottom: 20px;
+    border-color: white;
+}
+
+#Img-Cursos{
+    color: white;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    left: 0px;
+}
+
+#Botão-Início2{
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    font-family:Paratha;
+    font-size: 15px;
+    background-image: linear-gradient(yellow, black);
+    border-color: white;
+}
+
+#Img-Início2{
+    color: white;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    right: 0px;
+}
+
+@font-face {
+    font-family: Paratha;
+    src: url(../Font/Paratha/Paratha.ttf);
+}

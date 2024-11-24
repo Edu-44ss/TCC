@@ -1,0 +1,289 @@
+/*Categoria 1: Ínicio e Cabeçalho*/
+
+#Logo {
+    width: 800px;
+    border: none;
+    border-width: 0px;
+    position:relative;
+    bottom: 140px;
+}
+
+header{
+    border: 10px;
+    border-color: rgb(62, 178, 231);
+    background-color: black;
+    border-style: ridge;
+    text-align: center;
+    border-radius: 70px;
+    width: 100%;
+    height: 200px;
+}
+
+#Nome{
+    position: relative;
+    bottom: 330px;
+    font-family:cursive;
+}
+
+.Corpo-Cursos{
+    background-image: url(../img/Background.jpg);
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+h2{
+    color: white;
+    position: relative;
+    text-decoration: underline white;
+    text-align: center;
+}
+
+h1{
+    color: white;
+}
+
+button{
+    position: relative;
+    bottom: 10px;
+    border-width: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-size: 200px;
+    background-position: center;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+#Pro{
+    width: 200px;
+    height: 200px;
+    color: white;
+    position: relative;
+    border-radius: 50px;
+    border-style:ridge;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#T-Pro{
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+}
+
+
+#Img-Pro{
+    position: relative;
+    top: 20px;
+}
+
+#Pro{
+    background-image: url(../img/Programação.jpg);
+    border-color: white;
+    position: relative;
+    left: 45%;
+    top: 180px;
+}
+
+#Pro::after{
+    content: attr(data-hover-text);
+    color: blue;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-right: 5px;
+    border-radius: 50px;
+    display: block;
+    opacity: 0; 
+    transition: all 0.5s;
+}
+
+#Pro:hover::after{
+    top: 200px;
+    left: 0px;
+    opacity: 1; 
+}
+
+ul{
+    list-style: none;
+}
+
+#Botão-Usuário{
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    font-family:Paratha;
+    font-size: 15px;
+    background-image: linear-gradient(cyan, black);
+    left: 1700px;
+    bottom: 20px;
+    border-color: white;
+}
+
+#Img-Usuário{
+    color: white;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    right: 10px;
+}
+
+#Botão-Início{
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    font-family:Paratha;
+    font-size: 15px;
+    background-image: linear-gradient(yellow, black);
+    border-color: white;
+}
+
+#Img-Início{
+    color: white;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    right: 0px;
+}
+
+@font-face {
+    font-family: Paratha;
+    src: url(../Font/Paratha/Paratha.ttf);
+}
+
+#Pyt, #Bp{
+    display: none;
+}
+
+#Pyt{
+    background-image: linear-gradient(blue, yellow, blue);
+    border-color: cyan;
+    font-size: 20px;
+    font-family: Paratha;
+    border-radius: 30px;
+    height: 50px;
+    width: 100px;
+    position: relative;
+    left: 60%;
+}
+
+#Bp{
+    background-color: greenyellow;
+    border-color: black;
+    font-size: 13px;
+    font-family: Paratha;
+    border-radius: 30px;
+    position: relative;
+    left: 67%;
+    bottom: 50px;
+}
+
+#Cmm, #Bc{
+    display: none;
+}
+
+#Cmm{
+    background-image: linear-gradient(blue, white, blue);
+    border-color: cyan;
+    font-size: 20px;
+    font-family: Paratha;
+    border-radius: 30px;
+    height: 50px;
+    width: 100px;
+    position: relative;
+    left: 60%;
+    top: 110px;
+}
+
+#Bc{
+    background-color: greenyellow;
+    border-color: black;
+    font-size: 13px;
+    font-family: Paratha;
+    border-radius: 30px;
+    position: relative;
+    left: 67%;
+    top: 70px;
+}
+
+#Rub, #Br{
+    display: none;
+}
+
+#Rub{
+    background-image: linear-gradient(red, white, darkred);
+    border-color: cyan;
+    font-size: 20px;
+    font-family: Paratha;
+    border-radius: 30px;
+    height: 50px;
+    width: 100px;
+    position: relative;
+    left: 35%;
+    top: 110px;
+}
+
+#Br{
+    background-color: greenyellow;
+    border-color: black;
+    font-size: 13px;
+    font-family: Paratha;
+    border-radius: 30px;
+    position: relative;
+    left: 27%;
+    top: 70px;
+}
+
+#Sql, #Bs{
+    display: none;
+}
+
+#Sql{
+    background-image: linear-gradient(darkblue, orange, blue);
+    border-color: cyan;
+    font-size: 20px;
+    font-family: Paratha;
+    border-radius: 30px;
+    height: 50px;
+    width: 100px;
+    position: relative;
+    left: 35%;
+    bottom: 10px;
+}
+
+#Bs{
+    background-color: greenyellow;
+    border-color: black;
+    font-size: 13px;
+    font-family: Paratha;
+    border-radius: 30px;
+    position: relative;
+    left: 27%;
+    bottom: 50px;
+}
+
+
+/* Fim da categoria 1*/
+
+/*Categoria 2: Estrutura geral*/
+
+/*Fim da categoria 2*/
+
+/*Categoria 3: Estrutura final*/
+
+/*Fim da categoria 3*/
+
+
+
+/*Categoria 4: Outros*/
+
+/*Fim da categoria 4*/

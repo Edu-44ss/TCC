@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="stylesheet" href="./src/css/Estilo Cursos.css">
+</head>
+<body class="Corpo-Cursos">
+    <header>
+        <img id="Logo" src="../Projeto-Site-TCC/src/img/Logo.png" alt="Logo">
+    <h1 id="Nome">Nossos Cursos</h1>
+</header>
+<br>
+<main>
+    <a href="../index.html"><button id="Botão-Início"><img id="Img-Início" src="../Projeto-Site-TCC/src/img/Início.png" alt="">Início</button></a>
+    <a href="./Perfil.html"><button id="Botão-Usuário"><img id="Img-Usuário" src="../Projeto-Site-TCC/src/img/Usuário.png" alt="">Perfil</button></a>
+    <h2>Use o botão abaixo para navegar entre nossos cursos disponíveis!</h2>
+
+  <button id="Pro" data-hover-text="Cursos Ideais para quem deseja seguir na área da programação!">
+    <img id="Img-Pro" src="./src/img/Icon-Prog.png" alt="" width="100px">
+    <br>
+    <p id="T-Pro">Programação</p>
+  </button>
+
+  <button id="Pyt">Python</button>
+
+  <a href="./src/Pdf/Apostila-Python.pdf" download="Apostila-Python">
+  <button id="Bp">Baixar Material</button>
+</a>
+
+<button id="Cmm">C++</button>
+
+<a href="./src/Pdf/Apostila-C++.pdf" download="Apostila-C++">
+  <button id="Bc">Baixar Material</button>
+</a>
+
+<button id="Rub">Ruby</button>
+
+<a href="./src/Pdf/Apostila-Ruby.pdf" download="Apostila-Ruby">
+  <button id="Br">Baixar Material</button>
+</a>
+
+<button id="Sql">MySQL</button>
+
+<a href="./src/Pdf/Apostila-MySQL.pdf" download="Apostila-MySQL">
+  <button id="Bs">Baixar Material</button>
+</a>
+
+</main>
+
+<!-- Comando para o rodapé simples-->
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <p>&copy; 2024 Gerações Ensino. Todos os direitos reservados.</p>
+    </div>
+    <div class="footer-section">
+      <ul>
+        <li><a href="termos-de-uso">Termos de Uso</a></li>
+        <li><a href="regras">Regras</a></li>
+        <li><a href="e-mail:Gerações@gmail.com">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    border: 10px;
+  border-color: rgb(62, 178, 231);
+  background-color: black;
+  border-style: ridge;
+  border-radius: 30px;
+    color: #fff;
+    padding: 37px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    margin-top: 30%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-section {
+    margin: 10px;
+  }
+
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-section ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<script src="./src/js/Script-Cursos.js"></script>
+</body>
+</html> 
