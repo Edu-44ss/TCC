@@ -1,11 +1,13 @@
 /*Categoria 1: Ínicio e Cabeçalho*/
 
-#Logo {
-    width: 800px;
-    border: none;
-    border-width: 0px;
-    position:relative;
-    bottom: 140px;
+html{
+    scroll-behavior: smooth;
+}
+
+.Corpo-Cursos{
+    background-image: url(../img/Background.jpg);
+    background-repeat: repeat-y;
+    background-size: contain;
 }
 
 header{
@@ -19,16 +21,75 @@ header{
     height: 200px;
 }
 
+#Logo {
+    width: 800px;
+    border: none;
+    border-width: 0px;
+    position:relative;
+    bottom: 140px;
+}
+
 #Nome{
     position: relative;
     bottom: 330px;
-    font-family:cursive;
+    font-family:High;
+    color: white;
 }
 
-.Corpo-Cursos{
-    background-image: url(../img/Background.jpg);
-    background-repeat: repeat-y;
-    background-size: contain;
+/* Fim da categoria 1*/
+
+/*Categoria 2: Layout Primário*/
+
+button:hover{
+    transform: scale(1.1);
+}
+
+button{
+    position: relative;
+    bottom: 10px;
+    border-width: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#Botão-Início{
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    font-family:Paratha;
+    font-size: 15px;
+    background-image: linear-gradient(yellow, black);
+    border-color: white;
+}
+
+#Img-Início{
+    color: white;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    right: 0px;
+}
+
+#Botão-Usuário{
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    font-family:Paratha;
+    font-size: 15px;
+    background-image: linear-gradient(cyan, black);
+    left: 1700px;
+    bottom: 20px;
+    border-color: white;
+}
+
+#Img-Usuário{
+    color: white;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    right: 10px;
 }
 
 h2{
@@ -38,23 +99,9 @@ h2{
     text-align: center;
 }
 
-h1{
-    color: white;
-}
+/* Fim da categoria 2*/
 
-button{
-    position: relative;
-    bottom: 10px;
-    border-width: 5px;
-    cursor: pointer;
-    transition: transform 0.3s;
-    background-size: 200px;
-    background-position: center;
-}
-
-button:hover{
-    transform: scale(1.1);
-}
+/*Categoria 3: Botão Principal*/
 
 #Pro{
     width: 200px;
@@ -65,22 +112,6 @@ button:hover{
     border-style:ridge;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-
-#T-Pro{
-    position: relative;
-    top: 20px;
-    font-size: 15px;
-}
-
-
-#Img-Pro{
-    position: relative;
-    top: 20px;
-}
-
-#Pro{
     background-image: url(../img/Programação.jpg);
     border-color: white;
     position: relative;
@@ -111,54 +142,20 @@ button:hover{
     opacity: 1; 
 }
 
-ul{
-    list-style: none;
-}
-
-#Botão-Usuário{
-    color: white;
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    font-family:Paratha;
-    font-size: 15px;
-    background-image: linear-gradient(cyan, black);
-    left: 1700px;
-    bottom: 20px;
-    border-color: white;
-}
-
-#Img-Usuário{
-    color: white;
-    width: 100px;
-    height: 50px;
+#Img-Pro{
     position: relative;
-    right: 10px;
+    top: 20px;
 }
 
-#Botão-Início{
-    color: white;
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    font-family:Paratha;
-    font-size: 15px;
-    background-image: linear-gradient(yellow, black);
-    border-color: white;
-}
-
-#Img-Início{
-    color: white;
-    width: 60px;
-    height: 60px;
+#T-Pro{
     position: relative;
-    right: 0px;
+    top: 20px;
+    font-size: 15px;
 }
 
-@font-face {
-    font-family: Paratha;
-    src: url(../Font/Paratha/Paratha.ttf);
-}
+/*Fim da categoria 3*/
+
+/*Categoria 4: Botões Secundários*/
 
 #Pyt, #Bp{
     display: none;
@@ -271,19 +268,66 @@ ul{
     bottom: 50px;
 }
 
-
-/* Fim da categoria 1*/
-
-/*Categoria 2: Estrutura geral*/
-
-/*Fim da categoria 2*/
-
-/*Categoria 3: Estrutura final*/
-
-/*Fim da categoria 3*/
-
-
-
-/*Categoria 4: Outros*/
-
 /*Fim da categoria 4*/
+
+/*Categoria 5: Rodapé*/
+
+footer {
+    border: 10px;
+    border-color: rgb(62, 178, 231);
+    background-color: black;
+    border-style: ridge;
+    border-radius: 30px;
+    color: #fff;
+    padding: 37px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    margin-top: 30%;
+    }
+    
+    #Conteúdo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .Seção {
+        margin: 10px;
+    }
+    
+    .Seção {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .Seção ul li {
+        display: inline;
+        margin-right: 15px;
+    }
+    
+    .Seção ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .Seção ul li a:hover {
+        text-decoration: underline;
+    }
+
+/*Fim da categoria 5*/
+
+/*Categoria 6: Fontes*/
+
+@font-face {
+    font-family: Paratha;
+    src: url(../Font/Paratha/Paratha.ttf);
+}
+
+@font-face {
+    font-family: High;
+    src: url(../Font/High/High\ Speed.ttf);
+}
+
+/*Fim da categoria 6*/

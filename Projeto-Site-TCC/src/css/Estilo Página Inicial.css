@@ -40,7 +40,7 @@ header{
 
 /* Fim da categoria 1*/
 
-/*Categoria 2: Estrutura geral*/
+/*Categoria 2: Layout Primário*/
 
 button:hover{
     transform: scale(1.1);
@@ -112,30 +112,13 @@ button:hover{
 [data-component="slideshow"] .slide {
     display: none;
     text-align: center;
-  }
-  
-  [data-component="slideshow"] .slide.active {
+    }
+
+    [data-component="slideshow"] .slide.active {
     display: block;
     opacity: 1;
     transform: scale(1);
-  }
-
-
-
-
-#Sobre{
-    font-family: Rounds;
-    font-size: 50px;
-    color: white;
-    text-align: center;
-}
-
-
-
-
-
-
-
+    }
 
 .Img-Slide{
     position:relative;
@@ -148,7 +131,16 @@ button:hover{
     height: 400px;
 }
 
+/*Fim da categoria 2*/
 
+/*Categoria 3: Estrutura Geral*/
+
+#Sobre{
+    font-family: Rounds;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
 
 #Img-Sobre{
     position:relative;
@@ -211,8 +203,6 @@ button:hover{
     text-align: center;
 }
 
-
-
 #Pop-Up1{
     position: relative;
     top: 50px;
@@ -230,6 +220,59 @@ button:hover{
     transition: transform 0.3s;
 }
 
+/*Fim da categoria 3*/
+
+/*Categoria 4: Rodapé*/
+
+footer {
+    border: 10px;
+border-color: rgb(62, 178, 231);
+background-color: black;
+border-style: ridge;
+border-radius: 30px;
+    color: #fff;
+    padding: 35px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    top: 220px;
+}
+
+#Conteúdo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Seção {
+    margin: 10px;
+}
+
+.Seçãoul {
+    list-style: none;
+    padding: 0;
+}
+
+  .Seção ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+
+  .Seção ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .Seção ul li a:hover {
+    text-decoration: underline;
+  }
+
+/*Fim da categoria 4*/
+
+/*Categoria 5: Fontes*/
+
+
 @font-face {
     font-family: High;
     src: url(../Font/High/High\ Speed.ttf);
@@ -245,15 +288,4 @@ button:hover{
     src: url(../Font/Paratha/Paratha.ttf);
 }
 
-
-/*Fim da categoria 2*/
-
-/*Categoria 3: Estrutura final*
-
-/*Fim da categoria 3*/
-
-
-
-/*Categoria 4: Outros*/
-
-/*Fim da categoria 4*/
+/*Fim da categoria 5*/

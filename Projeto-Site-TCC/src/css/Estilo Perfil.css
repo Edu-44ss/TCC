@@ -34,6 +34,7 @@ header {
     background-color: black; /* Cor de fundo preta */
     text-align: center; /* Centraliza o texto */
     border-radius: 70px; /* Bordas arredondadas */
+    font-family:High;
 }
 
 /* Estilos dos botões de navegação */
@@ -133,6 +134,8 @@ nav a button:hover {
     cursor: pointer; /* Altera o cursor para indicar interatividade */
 }
 
+/*Categoria 0: Layout Geral*/
+
 #Botão-Cursos{
     color: white;
     width: 100px;
@@ -173,7 +176,18 @@ nav a button:hover {
     right: 0px;
 }
 
+/*Fim da Categoria 0*/
+
+
+/*Fontes:*/
+
+
 @font-face {
     font-family: Paratha;
     src: url(../Font/Paratha/Paratha.ttf);
 }
+
+    @font-face {
+        font-family: High;
+        src: url(../Font/High/High\ Speed.ttf);
+    }
