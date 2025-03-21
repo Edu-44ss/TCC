@@ -1,4 +1,4 @@
-# TCC
+# TCC-JB
 .
 Este Projeto se trata de um Trabalho de Conclusão de Curso para o 4° Ano de Informática do Estadual José Bonifácio.
 
